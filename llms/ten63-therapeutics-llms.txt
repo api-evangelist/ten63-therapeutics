@@ -1,0 +1,31 @@
+# Ten63 Therapeutics
+
+> Ten63 Therapeutics is an AI-driven drug-discovery company building BEYOND, described as the world's first Large Quantum Chemistry Model. Ten63 pairs generative chemistry at scale with quantum-accurate molecular simulation — an approach it calls Superlearning — to design therapeutics for previously undruggable and under-drugged targets. Tagline: "From drug discovery to drug design."
+
+## Platform: BEYOND
+- BEYOND is a Large Quantum Chemistry Model that delivers quantum-physics-level accuracy at the speed of classical molecular mechanics.
+- It virtually explores more than 100 trillion molecules per binding pocket, guided by a simulation environment that closely tracks experimental reality, to design optimal molecules.
+- Superlearning: generate data in silico, learn from it instantly, and expand the frontier of druggable biology. Generative chemistry and quantum-accurate simulation each make the other smarter, compounding toward drug-discovery superintelligence.
+- Components: Move37 (generative chemistry) and Astrolabe (quantum-accurate forcefield and molecular dynamics).
+- Sentinel: a virtual Chief Scientific Officer that continuously scans publicly available information to propose and rank therapeutic targets by confidence and patient need.
+
+## Benchmarks (BEYOND vs Meta's UMA-M)
+- Accuracy: state-of-the-art mean absolute error vs CCSD(T) on public GMTKN55 subsets (S22, S66, ADIM6, WATER27). BEYOND matches or beats Meta's UMA-M and sits below the distribution of other machine-learning force fields. Against an internal benchmark of ~5,600 drug-like and protein-like systems at CCSD(T)/CBS, BEYOND is significantly more accurate than Meta's UMA-M (P < 0.0001, KS test).
+- Speed: ~260 molecular-dynamics steps per second versus ~0.14 (Meta UMA-S) and ~0.019 (Meta UMA-M) on identical hardware (Google Cloud a2-ultragpu-2g, 24 vCPUs, 340 GB, 1×A100 GPU) — roughly 1,800x faster than UMA-S and 13,900x faster than UMA-M.
+- Headline metrics (internal benchmarks vs Meta UMA-M): >40% more accurate, >10,000x faster to compute, >45x cheaper to train.
+
+## Pipeline & mission
+- An internal pipeline of first-in-class and best-in-class programs across oncology and other serious diseases, advancing toward a future where no loved one is lost to disease.
+
+## Team & locations
+- Founders and operators from Duke, Pfizer, Genentech, and Mirati, uniting chemistry, physics, biology, and AI.
+- Founder & CEO: Marcel Frenkel, PhD. Founder & CTO: Mark Hallen, PhD.
+- Locations: San Francisco, CA · Durham, NC · Boston, MA.
+
+## Contact
+- Email: contact@ten63tx.com
+- Contact page: https://www.ten63tx.com/contact
+
+## Pages
+- Home: https://www.ten63tx.com/
+- Get in touch: https://www.ten63tx.com/contact

@@ -1,0 +1,37 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTP probes of the only public Ten63 Therapeutics host (https://www.ten63tx.com)
+description: >-
+  Results of probing the /.well-known/ discovery surface for every host associated with Ten63
+  Therapeutics. Ten63 publishes no API, so apis.yml carries no baseURL and there is no OpenAPI
+  servers[] block; the only host to probe is the corporate marketing site. Every /.well-known/
+  path returned an HTTP 404 rendered by the Next.js/Vercel not-found page, so nothing was saved
+  and NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a verified
+  absence, not a served surface. The apex ten63tx.com 301s to www.ten63tx.com; probes on the
+  apex returned the same 404s after redirect. The candidate API/docs subdomains
+  (api., docs., developer., app., platform., beyond.ten63tx.com) do not resolve in DNS.
+hosts:
+  - host: https://www.ten63tx.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+notes:
+  - >-
+    Non-well-known discovery probes on the same host also missed: /openapi.json, /openapi.yaml,
+    /swagger.json, /api-docs, /docs, /redoc, /graphql and /api all returned 404.
+  - >-
+    /robots.txt (200) allows all agents and advertises /sitemap.xml (200), which lists exactly two
+    URLs — the home page and /contact. /llms.txt returned 200 with a real document and is saved to
+    llms/ten63-therapeutics-llms.txt.

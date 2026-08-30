@@ -1,17 +1,35 @@
 aid: ten63-therapeutics
 name: Ten63 Therapeutics
-description: 'Ten63 Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Ten63 Therapeutics is an AI-driven drug-discovery company spun out of Duke University in 2019 and
+  operating from San Francisco, Durham and Boston. It builds BEYOND, which the company describes as
+  the world's first Large Quantum Chemistry Model — pairing generative chemistry at scale (Move37)
+  with a quantum-accurate forcefield and molecular-dynamics engine (Astrolabe) in an approach it
+  calls Superlearning. BEYOND is used to design therapeutics for previously undruggable and
+  under-drugged targets, with an internal pipeline focused on oncology and platform partnerships
+  such as the multi-target collaboration with Boehringer Ingelheim. Ten63 is a therapeutics company,
+  not a software vendor: it publishes no developer program, no public API, and no machine-readable
+  API contract. It does publish an llms.txt describing the company and platform for AI agents.
 url: https://raw.githubusercontent.com/api-evangelist/ten63-therapeutics/refs/heads/main/apis.yml
+image: https://www.ten63tx.com/brand/White.webp
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
+x-tier: profiled
 x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Drug Discovery
+- Artificial Intelligence
+- Machine Learning
+- Computational Chemistry
+- Oncology
+- Life Sciences
+- Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ten63-therapeutics-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/ten63-therapeutics_stock/
+  url: https://www.ten63tx.com/
+- type: Support
+  url: https://www.ten63tx.com/contact
+- type: GitHubOrganization
+  url: https://github.com/ten63tx
+- type: LLMsTxt
+  url: llms/ten63-therapeutics-llms.txt
+
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Ten63 Therapeutics is a clinical-stage drug-design company, not a software vendor — its BEYOND
+    Large Quantum Chemistry Model is run internally and licensed through pharma partnerships, and
+    www.ten63tx.com is a two-page marketing site whose own sitemap.xml lists only the home page and
+    /contact, with no developer portal, docs, SDK or spec anywhere on it.
+  evidence:
+    - url: https://www.ten63tx.com/sitemap.xml
+      status: 200
+    - url: https://www.ten63tx.com/openapi.json
+      status: 404
+    - url: https://www.ten63tx.com/docs
+      status: 404
+    - url: https://www.ten63tx.com/.well-known/agent-card.json
+      status: 404
+    - url: https://api.github.com/orgs/ten63tx
+      status: 200
+    - url: https://www.ten63tx.com/llms.txt
+      status: 200
+  checked: '2026-08-30'
