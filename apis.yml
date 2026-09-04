@@ -11,6 +11,18 @@ description: >-
   not a software vendor: it publishes no developer program, no public API, and no machine-readable
   API contract. It does publish an llms.txt describing the company and platform for AI agents.
 url: https://raw.githubusercontent.com/api-evangelist/ten63-therapeutics/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://www.ten63tx.com/brand/White.webp
 x-type: company
 x-source: harvest:secondary-market
